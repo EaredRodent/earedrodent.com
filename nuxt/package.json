@@ -1,0 +1,53 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "alexander <alexander.a.rud@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --port=3002",
+    "build": "nuxt build",
+    "start": "nuxt start --port=3002",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "deploy": "nuxt build && nuxt start --port=3002"
+  },
+  "dependencies": {
+    "@mdi/font": "^3.2.89",
+    "@nuxtjs/axios": "^5.3.6",
+    "axios": "^0.18.0",
+    "cookie-universal-nuxt": "^2.0.14",
+    "css-loader": "^2.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "hash.js": "latest",
+    "jquery": "^3.3.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "localforage": "^1.7.3",
+    "mobile-detect": "^1.4.3",
+    "nuxt": "^2.0.0",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vee-validate": "^2.1.7",
+    "vue-native-websocket": "^2.0.12",
+    "vuetify": "^1.5.4",
+    "ws": "^6.1.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "material-design-icons-iconfont": "^4.0.3"
+  },
+  "peerDependencies": {
+    "eslint-config-airbnb-base": "^13.1.0"
+  }
+}

@@ -1,0 +1,425 @@
+.b0-DsoCam {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  overflow-y: scroll;
+
+  &, *:not(a) {
+    color: white;
+    font-weight: 400;
+  }
+}
+
+.b0-loading {
+  animation: b0Loading 1s infinite linear;
+  //color: #1976d2 !important;
+  color: orange !important;
+}
+
+@keyframes b0Loading {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+//================================================
+
+.b1-DsoQuickLauncher:extend(.b0-DsoCam all) {
+}
+
+//================================================
+
+.b2-Eralex {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.b2-content {
+  border-radius: 3px;
+  flex: 0 0 600px;
+  height: 100%;
+  background: white;
+  padding: 15px;
+}
+
+.b2-script-list {
+  margin-bottom: 15px;
+}
+
+.hidden-upload-button {
+  display: none;
+}
+
+.b2-script-btn-upload {
+  margin-bottom: 15px !important;
+}
+
+.b2-script-upload-name {
+  border-bottom: silver 1px solid;
+}
+
+.b2-upload-status-warning {
+  color: yellow;
+}
+
+.b2-upload-status-error {
+  color: #ff0000;
+}
+
+.b2-upload-status-success {
+  color: #00ff00;
+}
+
+//================================================
+
+.b3-DsoCamPrivate {
+  height: 100%;
+  background: black;
+  line-height: 1;
+}
+
+.b3-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: visible;
+  transition: opacity 1s;
+  justify-content: flex-end;
+}
+
+.b3-values {
+  flex: 1 1 0;
+  display: flex;
+}
+
+.b3-rotators {
+  flex: 0 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  padding: 10px;
+
+  * {
+    user-select: none;
+  }
+
+  &-y {
+    margin-top: 10px;
+  }
+}
+
+.b3-sliders {
+  margin-left: 10px;
+  flex: 1 1 0;
+  display: flex;
+  padding: 40px 10px 40px 0;
+}
+
+.b3-sliders-left {
+  flex: 1 1 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.b3-sliders-right {
+  flex: 1 1 0;
+  margin-left: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.b3-storage {
+  flex: 1 1 0;
+  margin: 10px 0 10px 10px;
+  overflow-y: auto;
+}
+
+.b3-storage-item {
+  padding: 10px;
+  border: 1px solid #222;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  height: calc(1rem + 20px);
+  max-height: calc(1rem + 20px);
+  cursor: pointer;
+}
+
+.b3-storage-item:hover {
+  background: #222;
+}
+
+.b3-storage-item:not(:last-child) {
+  border-bottom: none;
+  padding-bottom: 11px;
+}
+
+.b3-title {
+  flex: 1 1 0;
+}
+.b3-date {
+  margin-left: 10px;
+  flex: 0 0 auto;
+  font-size: 0.9rem;
+  opacity: 0.75;
+  font-style: italic;
+}
+
+.b3-actions {
+  margin-left: 10px;
+  flex: 0 0 auto;
+  display: flex;
+}
+
+.b3-action-btn {
+  margin: 0 !important;
+}
+
+.b3-dialog {
+  background: black;
+  border: 1px solid white;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.b3-dialog-field {
+  width: 100%;
+}
+
+.b3-sidebar {
+  padding: 10px 0;
+  flex: 0 0 auto;
+  border-left: 1px solid #111;
+  display: flex;
+  flex-flow: column;
+}
+
+.b3-sidebar-btn {
+  margin: 0 !important;
+  width: 50px;
+  min-width: auto !important;
+}
+
+.b3-block-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+
+  &-inner {
+    height: 100%;
+  }
+}
+
+.b3-load {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 230px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s;
+
+  &-box {
+    width: 400px;
+  }
+
+  &-title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  &-info {
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+    opacity: 0.9;
+  }
+
+  &-progress {
+    margin-top: 40px;
+    transform: translateY(-10px);
+  }
+}
+
+.b3-debug {
+}
+
+.b3-DsoCamPrivate .v-slider__thumb-label {
+  color: black !important;
+}
+
+.b3-DsoCamPrivate .v-input--slider {
+  max-height: 24px;
+  margin: 0;
+}
+
+.b3-DsoCamPrivate .v-input__prepend-outer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.b3-DsoCamPrivate .v-slider__ticks {
+  margin-top: 5px;
+  font-size: 0.8rem !important;
+}
+
+//================================================
+
+.b4-DsoQuickLauncherPrivate {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  transition: flex 1s ease-out;
+  background: black !important;
+}
+
+.b4-DsoQuickLauncherPrivate * {
+  user-select: none;
+}
+
+.b4-DsoQuickLauncherPrivate &, .b4-DsoQuickLauncherPrivate *:not(a) {
+  color: white;
+}
+
+.b4-header {
+  flex: 0 0 auto;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: #2196F3 2px solid;
+
+  &, * {
+    font-size: 1.2rem;
+    font-family: "Courier New", monospace;
+  }
+}
+
+.b4-body {
+  flex: 1 1 0;
+  padding: 20px;
+}
+
+.b4-about {
+  flex: 0 0 auto;
+  padding: 5px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.b4-author {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.b4-support {
+  display: flex;
+
+  &, * {
+    font-size: 0.75rem;
+  }
+
+  &-support {
+    margin-right: 5px;
+    opacity: 0.6;
+  }
+}
+
+.b4-footer {
+  flex: 0 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5px 20px;
+  background: red;
+
+  &, * {
+    font-size: 0.8rem;
+  }
+
+  > * {
+    margin: 0 !important;
+  }
+}
+
+.b4-question {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  animation: b4ShowBodyQuestion 0.75s ease-out;
+
+  &-caption {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+}
+
+@keyframes b4ShowBodyQuestion {
+  from {
+    box-shadow: 0 0 5px white;
+    transform: perspective(100px) translate3d(-200px, 0, -50px) rotate3d(0, 1.5, 1, 20deg);
+  }
+  to {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+//================================================
+
+.b5-Index:extend(.b0-DsoCam all) {
+}
+
+.b5-box {
+  background: rgba(0, 0, 0, .8);
+  padding: 20px;
+  border-radius: 5px;
+  flex: 0 1 600px;
+  min-height: 100%;
+  border: 1px solid #222;
+}
+
+.b5-box > * {
+  margin-bottom: 20px;
+}
+
+.b5-header {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.b5-variant-link {
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  height: 1.5rem;
+  max-height: 1.5rem;
+  overflow: hidden;
+  color: deepskyblue;
+}
+
+.b5-ghosty {
+  visibility: hidden;
+}

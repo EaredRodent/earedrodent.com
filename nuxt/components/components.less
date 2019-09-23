@@ -1,0 +1,209 @@
+.a0-AppBar {
+  background: rgba(0, 0, 0, .5) !important;
+  /*border-bottom: 1px solid #808080;*/
+
+  * {
+    user-select: none;
+  }
+}
+
+.a0-title {
+  font-size: 1.2rem;
+}
+
+.a0-list {
+  background: rgba(0, 0, 0, .5) !important;
+}
+
+//================================================
+
+.a1-Login {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.a1-wrapper {
+  flex: 0 0 400px;
+  margin-top: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.a1-form {
+  flex: 1 0 0;
+}
+
+//================================================
+
+.a2-rotator-box {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  transition: all 0.1s linear;
+}
+
+.a2-rotator {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: #ddd;
+  border: #ddd 2px solid;
+  border-radius: 100%;
+  box-shadow: 0 0 1px 0 #ddd inset, 0 0 1px 0 #ddd;
+  cursor: pointer;
+}
+
+.a2-rotator-arrow {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  //border: white 1px solid;
+  background: white;
+  border-radius: 100%;
+  //box-shadow: 0 0 1px 0 white inset, 0 0 1px 0 white;
+  transition: all 200ms linear;
+}
+
+.a2-rotator-arrow-active {
+  box-shadow: 0 0 10px 2px white;
+  transition: none;
+}
+
+.a2-rotator-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  user-select: none;
+  text-align: center;
+  font-size: 11px;
+  font-family: "Lucida Console", monospace;
+}
+
+.a2-info {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+//================================================
+
+.a3-Viewer {
+  flex: 0 1 600px;
+  background: rgba(0, 0, 0, .8);
+  border-radius: 5px;
+  padding: 20px;
+  min-height: 100%;
+  border: 1px solid #222;
+
+  > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.a3-content-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.a3-content-text {
+  padding-left: 20px;
+}
+
+.a3-content-download {
+  display: flex;
+  justify-content: space-between;
+
+  * {
+    text-decoration: none;
+  }
+
+  &-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.a3-content-link {
+  height: 1.5rem;
+  max-height: 1.5rem;
+  display: flex;
+  color: white;
+}
+
+.a3-content-btn {
+  margin: 0;
+
+  .v-icon {
+    transform: translateX(-5px);
+  }
+}
+
+.a3-content-history {
+  border-top: 1px solid #808080;
+  padding-top: 20px;
+}
+
+.a3-content-history-version {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.a3-content-history-version-info {
+}
+
+.a3-content-history-version-info-number {
+  font-size: 1rem;
+}
+
+.a3-content-history-version-about {
+  padding-left: 20px;
+}
+
+.a3-updates {
+  border-top: 1px solid #222;
+  padding-top: 20px;
+
+  &-cols {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.8;
+
+    div {
+      text-align: center;
+      line-height: 1;
+    }
+
+    &-small {
+      display: inline-block;
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
+  }
+
+  &-item {
+    &-text {
+      font-size: 0.9rem;
+
+      &-version {
+        font-size: 1rem;
+      }
+    }
+
+    &-date {
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+  }
+}
+
