@@ -4,10 +4,10 @@
     <div class="b7-author">Yuka-Khryuka</div>
 
     <a class="b7-link" href="/exe/DSO_Cam.msi">
-      DSO_Cam {{ version.dsoCam }} (32 bit client)
+      DSO_Cam {{ version.dsoCam }} (32 bit)
     </a>
     <a class="b7-link" href="/exe/DSO_QuickLauncher.msi">
-      DSO_QuickLauncher {{ version.dsoQuickLauncher }} (32 bit client)
+      DSO_QuickLauncher {{ version.dsoQuickLauncher }} (32 bit)
     </a>
   </div>
 </template>
