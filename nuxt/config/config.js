@@ -52,6 +52,10 @@ config.PAGES = {
   PAGE_Test: {
     name: 'Test',
     url: '/test'
+  },
+  PAGE_34ZDEYpZNrcgadVsHVQS: {
+    name: 'Test',
+    url: '/34ZDEYpZNrcgadVsHVQS'
   }
 }
 /**

@@ -169,6 +169,7 @@
 .b3-title {
   flex: 1 1 0;
 }
+
 .b3-date {
   margin-left: 10px;
   flex: 0 0 auto;
@@ -422,4 +423,72 @@
 
 .b5-ghosty {
   visibility: hidden;
+}
+
+//================================================
+
+.b6-page {
+  overflow: auto;
+}
+
+.b6-block {
+  border-bottom: 1px solid black;
+}
+
+//================================================
+
+.b7-Dso {
+  background: white;
+  height: 100%;
+  font-family: "Courier New", monospace;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: relative;
+  opacity: 0;
+  animation: b7-Appear forwards 1s;
+}
+
+@keyframes b7-Appear {
+  to {
+    opacity: 1;
+  }
+}
+
+.b7-link {
+  font-style: italic;
+  font-size: 1.05rem;
+  z-index: 2;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.b7-link:hover {
+  background: black;
+}
+
+.b7-rect {
+  z-index: 1;
+  position: absolute;
+  border: 1px solid orangered;
+  width: 50vh;
+  height: 50vh;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('https://i.ytimg.com/vi/aSduiSwlxUw/hqdefault.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-color: black;
+  background-blend-mode: hard-light;
+}
+
+.b7-author {
+  line-height: 1;
+  padding: 10px;
+  position: absolute;
+  color: black;
+  right: 0;
+  bottom: 0;
 }

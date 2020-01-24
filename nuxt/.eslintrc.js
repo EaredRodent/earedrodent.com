@@ -21,13 +21,13 @@ module.exports = {
   rules: {
     'no-trailing-spaces': 'off',
     'object-shorthand': 'error',
-    'vue/max-attributes-per-line': ["error", {
-      "singleline": {
-        "max": 3
+    'vue/max-attributes-per-line': ['error', {
+      'singleline': {
+        'max': 3
       },
-      "multiline": {
-        "max": 3,
-        "allowFirstLine": true
+      'multiline': {
+        'max': 3,
+        'allowFirstLine': true
       }
     }],
     'vue/attributes-order': 'off'

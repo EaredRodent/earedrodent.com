@@ -3,7 +3,7 @@
 // comment out the following two lines when deployed to production
 $lol = gethostname();
 
-if (in_array(gethostname(), ['EaredRodentf'])) {
+if (in_array(gethostname(), ['RABBIT'])) {
     defined('YII_DEBUG') or define('YII_DEBUG', true);
     defined('YII_ENV') or define('YII_ENV', 'dev');
 }

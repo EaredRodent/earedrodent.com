@@ -1,12 +1,18 @@
 import config from '~/config/config'
 
 export const state = function () {
-  return {}
+  return {
+    version: {}
+  }
 }
 
 export const getters = {}
 
-export const mutations = {}
+export const mutations = {
+  setVersion (state, version) {
+    state.version = version
+  }
+}
 
 export const actions = {
   /**

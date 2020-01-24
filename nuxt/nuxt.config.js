@@ -28,7 +28,8 @@ module.exports = {
       }
     ],
     script: [
-      { src: 'qrc:///qtwebchannel/qwebchannel.js' }
+      { src: 'qrc:///qtwebchannel/qwebchannel.js' },
+      { src: 'https://cdn.rawgit.com/BrainJS/brain.js/45ce6ffc/browser.js' }
     ]
   },
   /*

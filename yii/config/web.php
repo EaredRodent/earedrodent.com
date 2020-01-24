@@ -62,8 +62,9 @@ $config = [
         ],
         'db' => $db,
         'urlManager' => [
+            'class' => 'yii\web\UrlManager',
             'enablePrettyUrl' => true,
-            'enableStrictParsing' => true,
+            //'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
                 [
@@ -108,6 +109,14 @@ $config = [
                     'controller' => ['v1/eralex'],
                     'extraPatterns' => [
                         'POST upload' => 'upload'
+                    ],
+                ],
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'pluralize' => false,
+                    'controller' => ['v1/test'],
+                    'extraPatterns' => [
+                        'GET get-orders' => 'get-orders'
                     ],
                 ],
             ],
