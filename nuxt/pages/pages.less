@@ -438,21 +438,13 @@
 //================================================
 
 .b7-Dso {
-  background: white;
   height: 100%;
   font-family: "Courier New", monospace;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   position: relative;
-  opacity: 0;
-  animation: b7-Appear forwards 1s;
-}
-
-@keyframes b7-Appear {
-  to {
-    opacity: 1;
-  }
+  transition: background-color 0.6s linear;
 }
 
 .b7-link {
@@ -462,10 +454,15 @@
   color: white;
   display: block;
   text-align: center;
+  padding: 1px 0 1px 0;
 }
 
 .b7-link:hover {
   background: black;
+  border: 1px solid orangered;
+  border-left: none;
+  border-right: none;
+  padding: 0;
 }
 
 .b7-rect {
@@ -488,7 +485,7 @@
   line-height: 1;
   padding: 10px;
   position: absolute;
-  color: black;
+  color: orangered;
   right: 0;
   bottom: 0;
 }
