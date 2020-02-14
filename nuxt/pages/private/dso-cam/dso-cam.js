@@ -128,7 +128,7 @@ export default {
           this.o.bridge.toJavaScript.disconnect(this.fromChannel)
           this.load.info = `Version... is outdated. Upgrade to ${this.startUp.dso_cam.version}.`
           this.load.error = true
-          this.o.bridge.cmdExecute('start https://dso.earedrodent.com/dso-cam')
+          this.o.bridge.cmdExecute('start https://dso.earedrodent.com')
         }
       }
 

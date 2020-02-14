@@ -63,7 +63,7 @@ class StartUpController extends ActiveController
         return [
             'version' => '0.3.2',
             'dso_quicklauncher' => '0.3.2',
-            'dso_cam' => ['core_version' => '4.1.2', 'version' => '4.1.2'],
+            'dso_cam' => ['core_version' => '4.1.3', 'version' => '4.1.3'],
             'migration' => ['version' => 'dso_quicklauncher']
         ];
     }
