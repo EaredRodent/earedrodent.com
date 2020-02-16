@@ -1,7 +1,7 @@
 <template>
   <div class="b7-Dso" :style="{ background: computedBg }">
     <div class="b7-rect"/>
-    <div class="b7-author">Yuka-Khryuka</div>
+    <a href="//vk.com/eared_rodent" target="_blank" class="b7-author">Yuka-Khryuka</a>
 
     <a class="b7-link" href="/exe/DSO_Cam.msi">
       DSO_Cam {{ version.dsoCam }} (32 bit)
