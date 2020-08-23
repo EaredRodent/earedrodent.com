@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'frontend',
+    title: 'Drakensang Online Apps',
     meta: [
       { charset: 'utf-8' },
       {
@@ -13,7 +13,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Nuxt.js project'
+        content: 'Drakensang Online, DSO_Cam, DSO_QuickLauncher'
       }
     ],
     link: [
